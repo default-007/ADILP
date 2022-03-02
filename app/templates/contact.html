@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+
+<body
+	class="page-template-default page color-custom style-simple button-custom layout-full-width if-zoom if-border-hide no-content-padding hide-love no-shadows header-split header-fw sticky-header sticky-tb-color ab-hide subheader-both-center menu-link-color menuo-no-borders mobile-tb-center mobile-side-slide mobile-mini-mr-ll tr-menu ">
+	<div id="Wrapper">
+		<div id="Header_wrapper">
+			<header id="Header">
+				{% include 'partials/topbar.html' %}
+			</header>
+			<div id="Subheader">
+				<div class="container">
+					<div class="column one">
+						<h1 class="title">Contact with us</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="Content">
+			<div class="content_wrapper clearfix">
+				<div class="sections_group">
+					<div class="entry-content">
+						<div class="section mcb-section mcb-section-4fco8fb9e no-margin-h no-margin-v equal-height" style>
+							<div class="section_wrapper mcb-section-inner">
+								<div class="wrap mcb-wrap mcb-wrap-cf2vj9ntr one valign-top clearfix" style>
+									<div class="mcb-wrap-inner">
+										<div class="column mcb-column mcb-item-pci1g4w58 one-third column_column">
+											<div class="column_attr clearfix align_center"
+												style="padding:100px 10% 85px;border: 1px solid #f2f2f2; margin-left: -1px;">
+												<h6>PHONE</h6>
+												<h3 style="color:#105d42">+61 (0) 383 766 284</h3>
+												<h3 style="color:#105d42">+61 (0) 383 766 284</h3>
+											</div>
+										</div>
+										<div class="column mcb-column mcb-item-5b2wdphk5 one-third column_column">
+											<div class="column_attr clearfix align_center"
+												style="padding:100px 7% 85px;border: 1px solid #f2f2f2; margin-left: -1px;">
+												<h6>OUR ADDRESS</h6>
+												<h3 style="color:#105d42">Level 13, 2 Elizabeth St, Melbourne, Victoria 3000, Australia</h3>
+											</div>
+										</div>
+										<div class="column mcb-column mcb-item-fahy55x58 one-third column_column">
+											<div class="column_attr clearfix align_center"
+												style="padding:100px 10% 85px;border: 1px solid #f2f2f2; margin-left: -1px;">
+												<h6>EMAIL</h6>
+												<h3 style="color:#105d42; word-wrap: break-word"><a href="#">noreply@envato.com</a></h3>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section mcb-section mcb-section-sddj1u2k3" style="padding-top:110px;padding-bottom:70px">
+							<div class="section_wrapper mcb-section-inner">
+								<div class="wrap mcb-wrap mcb-wrap-a6n137al5 one valign-top clearfix" style>
+									<div class="mcb-wrap-inner">
+										<div class="column mcb-column mcb-item-47u2kbkjh one column_column">
+											<div class="column_attr clearfix align_center" style>
+												<h2>Become an Investor</h2>
+												<hr class="no_line" style="margin:0 auto 25px">
+												<div id="contactWrapper">
+													<form id="contactform" method="post">
+														{% csrf_token %}
+														<!-- One Second (1/2) Column -->
+														<div class="column one-second">
+															{{ form.name|as_crispy_field }} </div>
+														<!-- One Second (1/2) Column -->
+														<div class="column one-second">
+															{{ form.email|as_crispy_field }} </div>
+														<!-- <div class="column one">
+															<input placeholder="Subject" type="text" name="subject" id="subject" size="40"
+																aria-invalid="false" /> </div>
+														<div class="column one">
+															<textarea placeholder="Message" name="body" id="body" style="width:100%;" rows="10"
+																aria-invalid="false"></textarea>
+														</div> -->
+														<div class="column one">
+															<button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section mcb-section mcb-section-40c4v6pkk full-width" style>
+							<div class="section_wrapper mcb-section-inner">
+								<div class="wrap mcb-wrap mcb-wrap-eiw57pjei one valign-top clearfix" style>
+									<div class="mcb-wrap-inner">
+										<div class="column mcb-column mcb-item-wnvddx0p8 one column_map_basic">
+											<iframe
+												src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.840108181596!2d144.95373631617383!3d-37.81721397975174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1spl!2spl!4v1603807369819!5m2!1spl!2spl"
+												width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		(% include "partials/footer.html" %)
+	</div>
+	<div id="Side_slide" class="right dark" data-width="250">
+		<div class="close-wrapper"> <a href="#" class="close"><i class="icon-cancel-fine"></i></a> </div>
+		<div class="menu_wrapper"></div>
+		<!-- <div class="extras"> <a href="https://1.envato.market/9ZxXY" class="action_button" target="_blank">Buy now</a>
+			<div class="extras-wrapper"></div>
+		</div> -->
+	</div>
+	<div id="body_overlay"></div>
+	{% include "partials/scripts.html" %}
+</body>
+
+{% endblock%}
