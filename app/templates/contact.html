@@ -58,6 +58,15 @@
 								<div class="wrap mcb-wrap mcb-wrap-a6n137al5 one valign-top clearfix" style>
 									<div class="mcb-wrap-inner">
 										<div class="column mcb-column mcb-item-47u2kbkjh one column_column">
+											{% for message in messages %}
+											<div class="alert {{ message.tags }} alert-dismissible" role="alert">
+												<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+												{{ message }}
+											</div>
+											{% endfor %}
+
 											<div class="column_attr clearfix align_center" style>
 												<h2>Become an Investor</h2>
 												<hr class="no_line" style="margin:0 auto 25px">

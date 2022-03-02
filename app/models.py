@@ -20,6 +20,7 @@ class MailMessage(models.Model):
 
 class News_video(models.Model):
   video_link = models.URLField(max_length=300, null=True)
+  date = models.DateField(null=True, blank=True)
 
 class Event(models.Model):
   headline = models.CharField(max_length=100, null=True)

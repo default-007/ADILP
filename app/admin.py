@@ -1,13 +1,24 @@
 from django.contrib import admin
+from import_export import resources
+from import_export.admin import ImportExportModelAdmin
 from .models import *
 from .forms import *
 
 admin.site.register(MailMessage)
-admin.site.register(Subscriber)
 admin.site.register(News_video)
-
+admin.site.register(Event)
+admin.site.register(Picture)
 # Register your models here.
-@admin.register(Event)
+
+class SubscriberResource(resources.ModelResource):
+    class Meta:
+        model = Subscriber
+        fields = ('id', 'name', 'email',)
+class SubscriberAdmin(ImportExportModelAdmin):
+  resource_class = SubscriberResource
+
+admin.site.register(Subscriber, SubscriberAdmin)
+''' @admin.register(Event)
 class EventAdmin(admin.ModelAdmin):
   list_display = ('headline',)
   add_form_template = 'admin/event_form.html'
@@ -36,4 +47,4 @@ class EventAdmin(admin.ModelAdmin):
       pictures = request.FILES.getlist('pictures')
       for picture in pictures:
           Picture.objects.create(post=obj, image=picture)
-      return super().save_model(request, obj, form, change)
+      return super().save_model(request, obj, form, change) '''

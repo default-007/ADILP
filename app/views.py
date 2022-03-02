@@ -1,6 +1,10 @@
 from django.shortcuts import redirect, render
 from .forms import *
-from django.template import loader
+from django.contrib import messages
+from django.core.mail import EmailMessage
+from django.conf import settings
+from django.contrib.sites.shortcuts import get_current_site
+from django.template.loader import render_to_string
 
 # Create your views here.
 
@@ -19,8 +23,15 @@ def about(request):
   return render(request, 'about.html', context)
 
 def mail_letters(request):
+  if request.method == 'POST':
+    form=MailMessageForm(request.POST)
+    if form.is_valid():
+      form.save()
+      messages.success(request, 'Message has ben sent to mail list')
+  else:
+    form=MailMessageForm()
   context = {
-
+    'form': form,
   }
   return render(request, '', context)
 
@@ -40,10 +51,23 @@ def posts(request):
 
 def contact(request):
   if request.method == 'POST':
+    
     form=SubscribersForm(request.POST)
     if form.is_valid():
       form.save()
-      return redirect('index')
+      name = form.cleaned_data.get('name')
+      to_email = form.cleaned_data.get('email')
+      current_site = get_current_site(request)
+      mail_subject = 'Thank you for registering to our site'
+      message = render_to_string('acc_active_email.html', {
+                  'name': name,
+                  'domain': current_site.domain,
+              })
+      email = EmailMessage(
+                        mail_subject, message, to=[to_email]
+            )
+      email.send()
+      messages.success(request, 'Subscription successful')
   else:
     form=SubscribersForm()
   context = {

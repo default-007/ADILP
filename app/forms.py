@@ -6,11 +6,12 @@ class SubscribersForm(forms.ModelForm):
     model = Subscriber
     fields = ["email","name"]
 
-class EventForm(forms.ModelForm):
-  def __init__(self, *args,**kwargs):
-    super().__init__(*args, **kwargs)
-    self.fields['pictures']= forms.FileField(widget=forms.ClearableFileInput(attrs={'multiple':True}))
+class MailMessageForm(forms.ModelForm):
+  class Meta:
+    model = MailMessage
+    fields = '__all__'
 
+class EventForm(forms.ModelForm):
   class Meta:
     model = Event
     fields = '__all__'
