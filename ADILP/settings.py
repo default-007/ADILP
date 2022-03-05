@@ -126,7 +126,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 gettext_noop = lambda s: s
 
-LANGUAGE_CODE = 'so'
+LANGUAGE_CODE = 'en'
 
 LANGUAGES = (
     ('en', _('English')),
