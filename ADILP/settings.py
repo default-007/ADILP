@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/3.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
+import django_heroku
 from django.conf import global_settings
 from django.utils.translation import gettext_lazy as _
 import os
@@ -26,7 +27,7 @@ SECRET_KEY = '@k5=07-wqpbu9_^22g8sv3kh=uau6$j36qab$s5rdvq$xk#mq4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 MESSAGE_TAGS = {
     messages.DEBUG: 'alert-info',
@@ -180,3 +181,5 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'brianokola@gmail.com'
 EMAIL_HOST_PASSWORD = 'tymnwesibaybjgni'
+
+django_heroku.settings(locals())
