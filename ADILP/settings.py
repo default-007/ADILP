@@ -130,7 +130,7 @@ LANGUAGE_CODE = 'en'
 
 LANGUAGES = (
     ('en', _('English')),
-    ('so', _(gettext_noop('Somali'))),
+    ('so', gettext_noop('Somali')),
 )
 EXTRA_LANG_INFO = {
     'so': {
