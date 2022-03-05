@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-03 16:03+0000\n"
+"POT-Creation-Date: 2022-03-05 10:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,12 +17,175 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ADILP/settings.py:131
+#: ADILP/settings.py:132
 msgid "English"
 msgstr ""
 
-#: ADILP/settings.py:132
+#: ADILP/settings.py:133
 msgid "Somali"
+msgstr ""
+
+#: app/templates/about.html:16
+msgid "About our company"
+msgstr ""
+
+#: app/templates/about.html:31
+msgid "About us"
+msgstr ""
+
+#: app/templates/about.html:41
+#, python-brace-format
+msgid ""
+"Africa Drought Inhibition and Livestock Protection Limited {ADILP} is an\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tinternal\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tinvestment company registered under the Company "
+"Act as an entity in Kenya, Somalia and\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tEthiopia. It is the\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tmission of ADILP to save livestock and sustain the "
+"livelihood of nomadic communities all\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\taround Africa.\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tADILP maintains the highest standards of ethics, "
+"integrity, transparency and responsibility in\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tall its\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tactions, tasks and relationships. We build on a "
+"reputation of quality products, smart growth\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tand\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tenvironmental friendliness of agricultural "
+"produce.\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t"
+msgstr ""
+
+#: app/templates/about.html:61
+msgid "Client Base"
+msgstr ""
+
+#: app/templates/about.html:63
+msgid ""
+"The company's main clients will be the nomadic communities and nations\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tlooking for\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tsustenance of their economy and livelihoods during "
+"the prevalent drought period.\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tThe company is leveraged through private "
+"investment and donor funding. The company target\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tclient are the\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tnomadic communities in Kenya, Somalia, Ethiopia, "
+"Djibouti, and the rest of Africa, with the\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tgovernment\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tsupport of the respective nations and "
+"international organizations.\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t"
+msgstr ""
+
+#: app/templates/about.html:97
+msgid "The Team"
+msgstr ""
+
+#: app/templates/about.html:99
+msgid ""
+"ADILP is a limited liability proprietorship incorporated in Kenya and\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tSomalia for\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\ttax purposes. The corporation has the sole "
+"shareholding of Honorable Abdirashid Mohammed Hidig\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t{a\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tVisionary Leader, Revolutionary Politician and "
+"member of Somali Federal Parliament, an\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tAgronomist, a MBA\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tholder and, a serial investor}\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tThe company plans to be leveraged through private "
+"investment and international and national\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tdonor funding.\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tThe company has, for a period of twenty-two "
+"months, done intensive research in both\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tagriculture and\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tdrought eradication and successfully launched its "
+"first output in Jubaland State (Kismayo) in\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tSomalia,\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\twhere it was hugely successful.\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t"
+msgstr ""
+
+#: app/templates/about.html:267
+msgid "The Project: ADILP Somalia"
+msgstr ""
+
+#: app/templates/about.html:269
+msgid ""
+"Phase 1 of the project is aims at serving 16 centers within Somalia and\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tKenya. The\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\texpansion\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tstructure\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tof ADILP is curated by specialized franchising of "
+"large-scale hydroponic fodder production.\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tThe company\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tbelieves that franchising of large-scale fodder "
+"production is the absolute game changer to the\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tinsistent\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tdrought crisis in Africa. With a team of highly "
+"qualified network of legal consultants, the\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tcompany has\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tsuccessfully set up legal structures to ensure "
+"that the brand is not only protected, but, that\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tthe quality\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tof the fodder production is maintained to the "
+"highest possible standards. The company believes\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tthat saving\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tlivestock lives of such communities will enhance "
+"comfort living and preserve\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tlivelihood."
+msgstr ""
+
+#: app/templates/about.html:309
+msgid "ADILP’s values"
+msgstr ""
+
+#: app/templates/about.html:311
+msgid ""
+"The driving values in the undertaking of the project shall\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tentail:"
+msgstr ""
+
+#: app/templates/about.html:314
+msgid "Transparency"
+msgstr ""
+
+#: app/templates/about.html:315
+msgid "Quality livestock feed"
+msgstr ""
+
+#: app/templates/about.html:316
+msgid "Affordability"
+msgstr ""
+
+#: app/templates/about.html:317
+msgid "Environmental consciousness"
+msgstr ""
+
+#: app/templates/about.html:318
+msgid "Livelihood preservation"
+msgstr ""
+
+#: app/templates/about.html:332
+msgid "ADILP’s Vision"
+msgstr ""
+
+#: app/templates/about.html:334
+msgid ""
+"To sustain nomadic communities in Africa by saving livestock\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tlives."
+msgstr ""
+
+#: app/templates/about.html:343
+msgid "ADILP’s Mission"
+msgstr ""
+
+#: app/templates/about.html:345
+msgid ""
+"The project’s mission is to provide a sustainable environment for\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tnomadic\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tpastoralists by preserving livestock lives thereby "
+"eliminating the rise of internally\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tdisplaced persons\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t(IDPs)"
 msgstr ""
 
 #: app/templates/events.html:16
@@ -42,54 +205,238 @@ msgid ""
 msgstr ""
 
 #: app/templates/index.html:111
-msgid "Expansion plans for 2021"
+msgid "The Problem"
 msgstr ""
 
 #: app/templates/index.html:113
 msgid ""
-"Pellentesque a semper massa. Fusce aliquet dolor non nunc mollis\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\tsollicitudin."
+"Now, more than ever, drought is a deteriorating humanitarian crisis as\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tper the\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\trecent assessment by the International Rescue "
+"Committee (IRC). In a statement, dated 31st\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tJanuary 2022,\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tIRC has warned that at least 25 million people "
+"will face catastrophic humanitarian need in the\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tcoming\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tmonths as drought continues across East Africa, "
+"and specifically the above mentioned regions.\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tIRC further\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tstates that thousands who depend on cultivation of "
+"crops and livestock have already been\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tdisplaced as they\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tmove to find new pastures or sources of income and "
+"food.\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tSomalia and Eastern Ethiopia and North Eastern "
+"Kenya feature on IRC’s Emergency Watchlist\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t2022, as part of\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t20 regions most at risk of a deteriorating "
+"humanitarian crisis this year. As such there is a\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tconstant urge\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tto the international community for support to "
+"communities in Somalia, Eastern Ethiopia and\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tNorth Eastern\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tKenya. While this primarily includes food, water "
+"and cash assistance, a more sustainable\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tsolution must be\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tfound to fully eradicate this dire situation.\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tOver 7.7 million people across Somalia, or at "
+"least 46 percent of the total population, need\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\turgent\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\thumanitarian food assistance to prevent food "
+"consumption gaps or the accelerated depletion of\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tlivelihood\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tassets indicative of Crisis (IPC Phase 3) or worse "
+"outcomes through mid-2022. The key drivers\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tof acute\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tfood insecurity in Somalia include the combined "
+"effects of consecutive seasons of poor and\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\terratic\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\trainfall distribution and conflict. Moreover, "
+"approximately 1.4 million children, or over 44\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tpercent of\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tthe children in Somalia under the age of five are "
+"likely to be acutely malnourished.\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t“Farmers have started experiencing loss of "
+"livestock due to disease and reduced pastures,\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tstraining\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tincome, food security and the capacity of "
+"households to survive the shock of the drought”.\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t"
 msgstr ""
 
-#: app/templates/index.html:116
+#: app/templates/index.html:153
 msgid "READ MORE"
 msgstr ""
 
-#: app/templates/index.html:131
-msgid "We have the largest extraction of oil"
+#: app/templates/index.html:168
+msgid "Solution"
 msgstr ""
 
-#: app/templates/index.html:133
+#: app/templates/index.html:170
 msgid ""
-"Sed enim metus, tempus elementum dui in, fringilla sollicitudin erat.\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\tSuspendisse\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\tblandit,\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\tnisl ut aliquet varius, sem dolor auctor nisi, vel "
-"facilisis sapien "
+"Africa Drought Inhibition and Livestock Protection Limited –\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tADILP seeks\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tto address this. The desire for and demand to "
+"create a sustainable and higher standard of\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tliving for the nomadic communities informs the "
+"inception of ADILP. The entire project\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tencompasses mass growing of hydroponic fodder in "
+"arid areas with the aim of preserving\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tlivestock which in turn product nomadic "
+"communities’ economic rights and limits their\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tdisplacement that is often occasioned by drought."
 msgstr ""
 
-#: app/templates/index.html:164
+#: app/templates/index.html:178
 msgid ""
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris\n"
+"The first of the project is aimed at serving\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\ta minimum of 28 drought-stricken centers regions "
+"in the three jurisdictions.\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tThe regional project combines drought eradication "
+"and livestock preservation solutions with\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\ttechnical style to accommodate the extreme "
+"conditions in Somalia, Eastern Ethiopia and North\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tEastern Kenya\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t"
+msgstr ""
+
+#: app/templates/index.html:211
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tmauris\n"
 "\t\t\t\t\t\t\t\t\t\t\t\t\tdolor, gravida\n"
 "\t\t\t\t\t\t\t\t\t\t\t\t\ta\n"
 "\t\t\t\t\t\t\t\t\t\t\t\t\tvarius blandit, auctor eget purus."
 msgstr ""
 
-#: app/templates/index.html:175
+#: app/templates/index.html:223
 msgid ""
-"Proin eu nibh sagittis, auctor nulla id, malesuada nulla. Integer sed\n"
+"Proin eu nibh sagittis, auctor nulla id, malesuada nulla.\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tInteger sed\n"
 "\t\t\t\t\t\t\t\t\t\t\t\t\ttellus eu orci\n"
 "\t\t\t\t\t\t\t\t\t\t\t\t\tpellentesque ultricies venenatis eget massa. Ut "
-"tempor sapien vel dolor venenatis feugiat.\n"
+"tempor sapien vel dolor venenatis\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tfeugiat.\n"
 "\t\t\t\t\t\t\t\t\t\t\t\t\tDonec egestas purus odio, a varius lorem vulputate "
-"at. Lorem ipsum dolor sit amet, consectetur\n"
+"at. Lorem ipsum dolor sit amet,\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tconsectetur\n"
 "\t\t\t\t\t\t\t\t\t\t\t\t\tadipiscing elit."
 msgstr ""
 
-#: app/templates/index.html:179
+#: app/templates/index.html:230
 msgid "Lets Translate this"
 msgstr "Sijui ata"
+
+#: app/templates/index.html:240
+msgid "Keys to Success"
+msgstr ""
+
+#: app/templates/index.html:243
+msgid ""
+"ADILP project's keys to success and profitability are as\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tfollows:"
+msgstr ""
+
+#: app/templates/index.html:245
+msgid "Partnerships:"
+msgstr ""
+
+#: app/templates/index.html:247
+msgid ""
+"Establish and maintain close contacts with investors, leaders and\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tentrepreneurs\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tin the\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tagronomic space, and all other service "
+"organizations that ADILP intends to partner\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\twith."
+msgstr ""
+
+#: app/templates/index.html:252
+msgid "Relationship: "
+msgstr ""
+
+#: app/templates/index.html:253
+msgid ""
+"<p>Keeping close contact with pastoral communities across different\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tregions and\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\testablishing a\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\twell-functioning long-term relationship with them "
+"to generate repeat business and obtain a\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\ttop-notch\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\treputation."
+msgstr ""
+
+#: app/templates/index.html:259
+msgid "Quality:"
+msgstr ""
+
+#: app/templates/index.html:261
+msgid ""
+"Establish a quality and comprehensive service experience for our clients\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tthat\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tinclude\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tconsultation, appraisal, product training, "
+"community information, etc.\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t"
+msgstr ""
+
+#: app/templates/index.html:345
+msgid "How we see it"
+msgstr ""
+
+#: app/templates/index.html:347
+msgid ""
+"ADILP project targets the arid and semi-arid populace. As such its\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tconcentration will\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tbe on multiple market segments. The nomadic "
+"community forms a large part of the population in\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tAfrica and\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\thas been steadily growing over the past two years. "
+"Further, this group’s need for a solution\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tfor the\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tadverse climate it often faces is unquantifiable "
+"and has even experienced exponential growth\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\trecently. The\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\timplication of a short supply of food and water "
+"during drought season has led to the loss of\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tboth animal\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tand human life. Over the recent past, no permanent "
+"solution has been adopted to aid in\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tpreserving the\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tlives and livelihood of nomadic communities.\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tADILP believes that the greatest threat to nomadic "
+"communities is lack of livelihood that\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tultimately\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tforces them to adopt IDPs status in their own "
+"countries. As such, preservation of their\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tsources of\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tlivelihood would be a step towards a comprehensive "
+"and permanent solution against the drought.\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tOne major\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tadvantage that ADILP has is that it has the "
+"capacity to produce livestock feed in large\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tcapacity within a\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tremarkably short period of time.\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t"
+msgstr ""
+
+#: app/templates/post.html:17
+#, python-format
+msgid "%(headline)s "
+msgstr ""
+
+#: app/templates/post.html:21
+msgid ""
+" EVENTS\n"
+"\t\t\t\t\t\t\t\t"
+msgstr ""
+
+#: app/templates/post.html:66
+#, python-format
+msgid ""
+" %(description)s\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+msgstr ""
 
 #: app/views.py:77
 msgid "Thank you for registering to our site"
