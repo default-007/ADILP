@@ -9,7 +9,8 @@ https://docs.djangoproject.com/en/3.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
-
+from django.conf import global_settings
+from django.utils.translation import gettext_lazy as _
 import os
 from django.contrib.messages import constants as messages
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -44,11 +45,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'accounts.apps.AccountsConfig',
     'app.apps.AppConfig',
 
     'crispy_forms',
+    'tinymce',
     'import_export',
+    'rosetta',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -59,6 +61,7 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -120,8 +123,25 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
+gettext_noop = lambda s: s
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en'
+
+LANGUAGES = (
+    ('en', _('English')),
+    ('so', _(gettext_noop('Somali'))),
+)
+EXTRA_LANG_INFO = {
+    'so': {
+        'bidi': False,
+        'code': 'so',
+        'name': 'Somali',
+        'name_local': u'af Soomaali',
+    },
+}
+import django.conf.locale
+LANG_INFO = dict(django.conf.locale.LANG_INFO, **EXTRA_LANG_INFO)
+django.conf.locale.LANG_INFO = LANG_INFO
 
 TIME_ZONE = 'UTC'
 
@@ -130,6 +150,10 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR, 'locale')
+]
 
 
 # Static files (CSS, JavaScript, Images)

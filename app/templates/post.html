@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% load static %}
+{% load static i18n%}
 {% block content %}
 
 
@@ -12,12 +12,14 @@
 			</header>
 		</div>
 		<div id="Intro" class=" full-screen parallax" style data-parallax="3d"><img class="mfn-parallax"
-				src="images/industry2-slider-bg.jpg" alt="parallax background" style="opacity:0">
+				src="{% static 'images/industry2-slider-bg.jpg'%}" alt="parallax background" style="opacity:0">
 			<div class="intro-inner" style>
-				<h1 class="intro-title">Labore et dolore magna aliquya</h1>
+				<h1 class="intro-title">{% blocktranslate with headline=event.headline %}{{headline}} {% endblocktranslate %}
+				</h1>
 				<div class="intro-meta">
 					<div class="date"> <i class="icon-clock"></i><span>December 22, 2020</span> </div>
-					<div class="categories"> <i class="icon-docs"></i><span><a href="#">News</a></span> </div>
+					<div class="categories"> <i class="icon-docs"></i><span><a href="#">{% blocktranslate %} EVENTS
+								{% endblocktranslate %}</a></span> </div>
 				</div>
 			</div>
 			<div class="intro-next"> <i class="icon-down-open-big"></i> </div>
@@ -27,7 +29,7 @@
 				<div class="sections_group">
 					<div id="post-64"
 						class="no-title share-simple post-64 post type-post status-publish format-standard has-post-thumbnail hentry category-news">
-						<a class="fixed-nav fixed-nav-prev format- style-default" href="post.html"><span class="arrow"><i
+						<!-- <a class="fixed-nav fixed-nav-prev format- style-default" href="post.html"><span class="arrow"><i
 									class="icon-left-open-big"></i></span>
 							<div class="photo"><img width="80" height="80" src="images/industry2-press-pic7-80x80.jpg"
 									class="attachment-blog-navi size-blog-navi wp-post-image" alt loading="lazy">
@@ -44,7 +46,7 @@
 								<h6>Imperdiet doming id quod mazim</h6><span class="date"><i class="icon-clock"></i>December 22,
 									2020</span>
 							</div>
-						</a>
+						</a> -->
 						<div class="post-wrapper-content">
 							<div class="section mcb-section mcb-section-4c839d1b7" style="padding-top:110px;padding-bottom:70px">
 								<div class="section_wrapper mcb-section-inner">
@@ -59,34 +61,32 @@
 										<div class="mcb-wrap-inner">
 											<div class="column mcb-column mcb-item-862064afd one column_column">
 												<div class="column_attr clearfix mobile_align_center" style>
-													<h3>Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin
-														bibendum sollicitudin feugiat.</h3>
+
 													<hr class="no_line" style="margin:0 auto 15px">
-													<h5>Aliquam ac dui vel dui vulputate consectetur. Mauris accumsan, massa non consectetur
-														condimentum, diam arcu tristique nibh, nec egestas diam elit at nulla. Suspendisse potenti.
-														In non lacinia risus.</h5>
+													<h5>{% blocktranslate with description=event.description|safe%} {{description}}
+														{% endblocktranslate %}</h5>
 												</div>
 											</div>
 											<div class="column mcb-column mcb-item-c36bcc3b3 one-second column_column">
 												<div class="column_attr clearfix" style="padding:0 5% 0 0;">
-													<p> Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+													<!-- <p> Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
 														lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla imperdiet id ac magna.
 														Suspendisse vel facilisis odio, at ornare nibh. </p>
 													<p> In malesuada, tortor eget sodales mollis, mauris lectus hendrerit purus, porttitor finibus
 														eros lorem eget mauris. Curabitur lacinia enim at ex blandit, vel pellentesque odio
-														elementum. </p>
+														elementum. </p> -->
 												</div>
 											</div>
 											<div class="column mcb-column mcb-item-9ec4e0a60 one-second column_column">
 												<div class="column_attr clearfix" style="padding:0 5% 0 0;">
-													<p> Aliquam ac dui vel dui vulputate consectetur. Mauris accumsan, massa non consectetur
+													<!-- <p> Aliquam ac dui vel dui vulputate consectetur. Mauris accumsan, massa non consectetur
 														condimentum, diam arcu tristique nibh, nec egestas diam elit at nulla. Suspendisse potenti.
 														In non lacinia risus, ac tempor ipsum. Phasellus venenatis leo eu semper varius. Maecenas
 														sit amet molestie leo. Morbi vitae urna mauris. Nulla nec tortor vitae eros iaculis
-														hendrerit aliquet non urna. Nulla sit amet vestibulum magna, eget pulvinar libero. </p>
+														hendrerit aliquet non urna. Nulla sit amet vestibulum magna, eget pulvinar libero. </p> -->
 												</div>
 											</div>
-											<div class="column mcb-column mcb-item-260853c68 one column_column">
+											<!-- <div class="column mcb-column mcb-item-260853c68 one column_column">
 												<div class="column_attr clearfix" style>
 													<h5>Nulla sit amet vestibulum magna:</h5>
 													<hr class="no_line" style="margin:0 auto 15px">
@@ -99,7 +99,7 @@
 															ipsum </li>
 													</ul>
 												</div>
-											</div>
+											</div> -->
 										</div>
 									</div>
 									<div class="wrap mcb-wrap mcb-wrap-805d2ec69 one valign-top clearfix" style>
@@ -127,14 +127,15 @@
 												</style>
 												<div id="sc_gallery-1"
 													class='gallery galleryid-64 gallery-columns-3 gallery-size-full file flat'>
+													{% for image in event.picture_set.all %}
 													<dl class="gallery-item">
 														<dt class='gallery-icon portrait'>
-															<a href="images/industry2-press-pic6.jpg"><img width="780" height="918"
-																	src="images/industry2-press-pic6.jpg" class="attachment-full size-full" alt
-																	loading="lazy"></a>
+															<a href="{{image.file.url}}"><img width="780" height="918" src="{{image.file.url}}"
+																	class="attachment-full size-full" alt loading="lazy"></a>
 														</dt>
 													</dl>
-													<dl class="gallery-item">
+													{%  endfor %}
+													<!-- <dl class="gallery-item">
 														<dt class='gallery-icon portrait'>
 															<a href="images/industry2-press-pic7.jpg"><img width="780" height="918"
 																	src="images/industry2-press-pic7.jpg" class="attachment-full size-full" alt
@@ -147,7 +148,7 @@
 																	src="images/industry2-press-pic9.jpg" class="attachment-full size-full" alt
 																	loading="lazy"></a>
 														</dt>
-													</dl>
+													</dl> -->
 													<br style="clear: both">
 												</div>
 											</div>
@@ -161,7 +162,7 @@
 										</div>
 									</div>
 									<div class="wrap mcb-wrap mcb-wrap-e67994b98 three-fifth valign-top clearfix" style>
-										<div class="mcb-wrap-inner">
+										<!-- <div class="mcb-wrap-inner">
 											<div class="column mcb-column mcb-item-7e85df9fe one column_divider">
 												<hr class="no_line" style="margin:0 auto 20px">
 											</div>
@@ -218,7 +219,7 @@
 															OFFER</span></a><a class="button button_size_2" href="#"><span
 															class="button_label">CONTACT US</span></a> </div>
 											</div>
-										</div>
+										</div> -->
 									</div>
 								</div>
 							</div>

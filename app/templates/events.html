@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load static i18n%}
+{% block content %}
+
+
+<body
+  class="page-template-default page color-custom style-simple button-custom layout-full-width if-zoom if-border-hide hide-love no-shadows header-split header-fw sticky-header sticky-tb-color ab-hide subheader-both-center menu-link-color menuo-no-borders mobile-tb-center mobile-side-slide mobile-mini-mr-ll tr-menu ">
+  <div id="Wrapper">
+    <div id="Header_wrapper">
+      <header id="Header">
+        {% include 'partials/topbar.html' %}
+      </header>
+      <div id="Subheader">
+        <div class="container">
+          <div class="column one">
+            <h1 class="title">{% trans 'Event' %}</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="Content">
+      <div class="content_wrapper clearfix">
+        <div class="sections_group">
+          <div class="entry-content">
+
+            {% for event in events %}
+            <div class="section mcb-section mcb-section-8iagme82v no-margin-h no-margin-v equal-height-wrap full-width"
+              style="padding-bottom:120px;padding-left:5%;padding-right:5%">
+              <div class="section_wrapper mcb-section-inner">
+                <div class="wrap mcb-wrap mcb-wrap-0j48nc9n9 one-second valign-top clearfix"
+                  style="padding:110px 6% 95px ;background-color:#f2f2f2">
+                  <div class="mcb-wrap-inner">
+                    <div class="column mcb-column mcb-item-klr0irky9 three-fourth column_column">
+                      <div class="column_attr clearfix mobile_align_center" style>
+                        <h2>{% blocktranslate with headline=event.headline %} {{ headline }} {% endblocktranslate %}
+                        </h2>
+                        <hr class="no_line" style="margin:0 auto 15px">
+                        <p> {% blocktranslate with description=event.description|safe%} {{ description }}
+                          {% endblocktranslate %}</p>
+                        <hr class="no_line" style="margin:0 auto 15px"> <a class="button button_size_2 button_theme"
+                          href="{% url 'event' event.headline %}"><span class="button_label">READ MORE</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="wrap mcb-wrap mcb-wrap-nwyzr7y7u one-second valign-top bg-cover clearfix"
+                  style="background-image:url({{event.picture_set.first.file.url}});background-repeat:repeat;background-position:center">
+                  <div class="mcb-wrap-inner">
+                    <div class="column mcb-column mcb-item-2op3bcxzr one column_divider">
+                      <hr class="no_line" style="margin:0 auto 400px">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            {% endfor %}
+            <div class="section mcb-section mcb-section-e5fe6d849" style="padding-top:110px;padding-bottom:70px">
+              <div class="section_wrapper mcb-section-inner">
+                <div class="wrap mcb-wrap mcb-wrap-32ec49edf one valign-top clearfix" style>
+                  <div class="mcb-wrap-inner">
+                    <div class="column mcb-column mcb-item-5235a2131 one column_column">
+                      <div class="column_attr clearfix align_center" style>
+                        <h2>Questions?</h2>
+                        <div class="mfn_heading heading_lines align_center">
+                          <h2 class="title" style="color:#105d42;"><span class="line line_l"
+                              style="background:#f2f2f2;"></span>
+                            africadroughtlivestock@gmail.com<span class="line line_r"
+                              style="background:#f2f2f2;"></span>
+                          </h2>
+                        </div>
+                        <h2> Email Us</h2>
+                        <hr class="no_line" style="margin:0 auto 50px"> <a class="button button_size_2 button_theme"
+                          href="contact.html"><span class="button_label">CONTACT US</span></a><a
+                          class="button button_size_2" href="press.html"><span class="button_label">GO TO
+                            PRESS</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include "partials/footer.html"%}
+  </div>
+  <div id="Side_slide" class="right dark" data-width="250">
+    <div class="close-wrapper"> <a href="#" class="close"><i class="icon-cancel-fine"></i></a> </div>
+    <div class="menu_wrapper"></div>
+    <!-- <div class="extras"> <a href="https://1.envato.market/9ZxXY" class="action_button" target="_blank">Buy now</a>
+			<div class="extras-wrapper"></div>
+		</div> -->
+  </div>
+  <div id="body_overlay"></div>
+  {% include "partials/scripts.html"%}
+</body>
+
+{% endblock %}

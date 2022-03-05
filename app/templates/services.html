@@ -22,7 +22,7 @@
 			<div class="content_wrapper clearfix">
 				<div class="sections_group">
 					<div class="entry-content">
-						<div class="section mcb-section mcb-section-9ix7dqhl6 equal-height-wrap"
+						<!-- <div class="section mcb-section mcb-section-9ix7dqhl6 equal-height-wrap"
 							style="padding-top:110px;padding-bottom:110px">
 							<div class="section_wrapper mcb-section-inner">
 								<div class="wrap mcb-wrap mcb-wrap-dva3am3j5 one-second valign-middle clearfix" style="padding:0 2%">
@@ -67,36 +67,8 @@
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="section mcb-section mcb-section-acbc725f4 no-margin-h no-margin-v equal-height-wrap full-width"
-							style="padding-bottom:120px;padding-left:5%;padding-right:5%">
-							<div class="section_wrapper mcb-section-inner">
-								<div class="wrap mcb-wrap mcb-wrap-6f6dabac4 one-second valign-top bg-cover clearfix"
-									style="background-image:url(images/industry2-wrap-bg2.jpg);background-repeat:repeat;background-position:center">
-									<div class="mcb-wrap-inner">
-										<div class="column mcb-column mcb-item-ab3ae3543 one column_divider">
-											<hr class="no_line" style="margin:0 auto 400px">
-										</div>
-									</div>
-								</div>
-								<div class="wrap mcb-wrap mcb-wrap-8189fc414 one-second valign-top clearfix"
-									style="padding:110px 6% 95px ;background-color:#f2f2f2">
-									<div class="mcb-wrap-inner">
-										<div class="column mcb-column mcb-item-0d4508575 three-fourth column_column">
-											<div class="column_attr clearfix mobile_align_center" style>
-												<h2>Oil extraction and transportation</h2>
-												<hr class="no_line" style="margin:0 auto 15px">
-												<p> Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin
-													bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna
-													purus, commodo in diam nec, pretium auctor. </p>
-												<hr class="no_line" style="margin:0 auto 15px"> <a class="button button_size_2 button_theme"
-													href="#"><span class="button_label">READ MORE</span></a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+						</div> -->
+						{% for service in services %}
 						<div class="section mcb-section mcb-section-8iagme82v no-margin-h no-margin-v equal-height-wrap full-width"
 							style="padding-bottom:120px;padding-left:5%;padding-right:5%">
 							<div class="section_wrapper mcb-section-inner">
@@ -105,19 +77,17 @@
 									<div class="mcb-wrap-inner">
 										<div class="column mcb-column mcb-item-klr0irky9 three-fourth column_column">
 											<div class="column_attr clearfix mobile_align_center" style>
-												<h2>Refineries around the world</h2>
+												<h2>{{service.title}}</h2>
 												<hr class="no_line" style="margin:0 auto 15px">
-												<p> Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin
-													bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna
-													purus, commodo in diam nec, pretium auctor. </p>
+												<p> {{service.description | safe}}</p>
 												<hr class="no_line" style="margin:0 auto 15px"> <a class="button button_size_2 button_theme"
-													href="#"><span class="button_label">READ MORE</span></a>
+													href="{% url 'service' service.title %}"><span class="button_label">READ MORE</span></a>
 											</div>
 										</div>
 									</div>
 								</div>
 								<div class="wrap mcb-wrap mcb-wrap-nwyzr7y7u one-second valign-top bg-cover clearfix"
-									style="background-image:url(images/industry2-wrap-bg3.jpg);background-repeat:repeat;background-position:center">
+									style="background-image:url({{service.image.url}});background-repeat:repeat;background-position:center">
 									<div class="mcb-wrap-inner">
 										<div class="column mcb-column mcb-item-2op3bcxzr one column_divider">
 											<hr class="no_line" style="margin:0 auto 400px">
@@ -126,64 +96,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="section mcb-section mcb-section-rhs79imz1 no-margin-h no-margin-v equal-height-wrap full-width"
-							style="padding-bottom:120px;padding-left:5%;padding-right:5%">
-							<div class="section_wrapper mcb-section-inner">
-								<div class="wrap mcb-wrap mcb-wrap-pvzmmwdxw one-second valign-top bg-cover clearfix"
-									style="background-image:url(images/industry2-wrap-bg4.jpg);background-repeat:repeat;background-position:center">
-									<div class="mcb-wrap-inner">
-										<div class="column mcb-column mcb-item-qdm3cu4xx one column_divider">
-											<hr class="no_line" style="margin:0 auto 400px">
-										</div>
-									</div>
-								</div>
-								<div class="wrap mcb-wrap mcb-wrap-57pelyybo one-second valign-top clearfix"
-									style="padding:110px 6% 95px ;background-color:#f2f2f2">
-									<div class="mcb-wrap-inner">
-										<div class="column mcb-column mcb-item-xfnotmvx9 three-fourth column_column">
-											<div class="column_attr clearfix mobile_align_center" style>
-												<h2>Research</h2>
-												<hr class="no_line" style="margin:0 auto 15px">
-												<p> Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin
-													bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna
-													purus, commodo in diam nec, pretium auctor. </p>
-												<hr class="no_line" style="margin:0 auto 15px"> <a class="button button_size_2 button_theme"
-													href="#"><span class="button_label">READ MORE</span></a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="section mcb-section mcb-section-7mtcpd09f no-margin-h no-margin-v equal-height-wrap full-width"
-							style="padding-left:5%;padding-right:5%">
-							<div class="section_wrapper mcb-section-inner">
-								<div class="wrap mcb-wrap mcb-wrap-5ccub2nxn one-second valign-top clearfix"
-									style="padding:110px 6% 95px ;background-color:#f2f2f2">
-									<div class="mcb-wrap-inner">
-										<div class="column mcb-column mcb-item-04oj1ig45 three-fourth column_column">
-											<div class="column_attr clearfix mobile_align_center" style>
-												<h2>We invest in alternative sources</h2>
-												<hr class="no_line" style="margin:0 auto 15px">
-												<p> Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin
-													bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna
-													purus, commodo in diam nec, pretium auctor. </p>
-												<hr class="no_line" style="margin:0 auto 15px"> <a class="button button_size_2 button_theme"
-													href="#"><span class="button_label">READ MORE</span></a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="wrap mcb-wrap mcb-wrap-cyyf9jq1s one-second valign-top bg-cover clearfix"
-									style="background-image:url(images/industry2-wrap-bg5.jpg);background-repeat:repeat;background-position:center">
-									<div class="mcb-wrap-inner">
-										<div class="column mcb-column mcb-item-9p460na46 one column_divider">
-											<hr class="no_line" style="margin:0 auto 400px">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+						{% endfor %}
 						<div class="section mcb-section mcb-section-e5fe6d849" style="padding-top:110px;padding-bottom:70px">
 							<div class="section_wrapper mcb-section-inner">
 								<div class="wrap mcb-wrap mcb-wrap-32ec49edf one valign-top clearfix" style>
@@ -193,10 +106,12 @@
 												<h2>Questions?</h2>
 												<div class="mfn_heading heading_lines align_center">
 													<h2 class="title" style="color:#105d42;"><span class="line line_l"
-															style="background:#f2f2f2;"></span> +61 (0) 383 766 284<span class="line line_r"
-															style="background:#f2f2f2;"></span></h2>
+															style="background:#f2f2f2;"></span>
+														africadroughtlivestock@gmail.com<span class="line line_r"
+															style="background:#f2f2f2;"></span>
+													</h2>
 												</div>
-												<h2>Call us</h2>
+												<h2> Email Us</h2>
 												<hr class="no_line" style="margin:0 auto 50px"> <a class="button button_size_2 button_theme"
 													href="contact.html"><span class="button_label">CONTACT US</span></a><a
 													class="button button_size_2" href="press.html"><span class="button_label">GO TO

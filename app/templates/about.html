@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% load static %}
+{% load static i18n%}
 {% block content %}
 
 
@@ -13,7 +13,7 @@
 			<div id="Subheader">
 				<div class="container">
 					<div class="column one">
-						<h1 class="title">About our company</h1>
+						<h1 class="title">{% blocktranslate %}About our company{% endblocktranslate %}</h1>
 					</div>
 				</div>
 			</div>
@@ -28,25 +28,28 @@
 									<div class="mcb-wrap-inner">
 										<div class="column mcb-column mcb-item-c5b8fec4c one column_column column-margin-30px">
 											<div class="column_attr clearfix" style>
-												<h2 style="color:#105d42;">2145 mln m<sup>3</sup></h2>
-												<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris dolor, gravida a
-													varius blandit, auctor eget purus.</h5>
+												<h2 style="color:#105d42;">{% blocktranslate %}About us{% endblocktranslate %}</h2>
+
 											</div>
 										</div>
 										<div class="column mcb-column mcb-item-406fe2c8d one column_divider">
 											<hrstyle="margin:0 auto 45px;background-color:#f2f2f2">
 										</div>
 										<div class="column mcb-column mcb-item-7e77a5e88 one column_column">
-											<div class="column_attr clearfix" style>
-												<p> Proin eu nibh sagittis, auctor nulla id, malesuada nulla. Integer sed tellus eu orci
-													pellentesque ultricies venenatis eget massa. Ut tempor sapien vel dolor venenatis feugiat.
-													Donec egestas purus odio, a varius lorem vulputate at. Lorem ipsum dolor sit amet, consectetur
-													adipiscing elit. </p>
-												<p> Curabitur tempus massa magna, quis vulputate lorem lobortis accumsan. Nulla lorem tortor,
-													luctus a neque eu. </p>
-												<p> Vestibulum vehicula tempor nulla, sed hendrerit urna interdum in. Donec et nibh maximus,
-													congue est eu, mattis nunc. Praesent ut quam quis quam venenatis fringilla. Morbi vestibulum.
-												</p>
+											<div class="co<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris dolor, gravida a
+													varius blandit, auctor eget purus.</h5>lumn_attr clearfix" style>
+												<p>{% blocktranslate %}Africa Drought Inhibition and Livestock Protection Limited {ADILP} is an
+													internal
+													investment company registered under the Company Act as an entity in Kenya, Somalia and
+													Ethiopia. It is the
+													mission of ADILP to save livestock and sustain the livelihood of nomadic communities all
+													around Africa.
+													ADILP maintains the highest standards of ethics, integrity, transparency and responsibility in
+													all its
+													actions, tasks and relationships. We build on a reputation of quality products, smart growth
+													and
+													environmental friendliness of agricultural produce.
+													{% endblocktranslate %} </p>
 											</div>
 										</div>
 									</div>
@@ -55,16 +58,20 @@
 									<div class="mcb-wrap-inner">
 										<div class="column mcb-column mcb-item-58d9d400c one column_column">
 											<div class="column_attr clearfix" style>
-												<h2 style="color:#105d42;">Orci varius natoque penatibus et magnis dis montes</h2>
+												<h2 style="color:#105d42;">{% blocktranslate %}Client Base{% endblocktranslate %}</h2>
 												<hr class="no_line" style="margin:0 auto 30px">
-												<p> Curabitur sed iaculis dolor, non congue ligula. Maecenas imperdiet ante eget hendrerit
-													posuere. Nunc urna libero, congue porta nibh a, semper feugiat sem. Sed auctor dui eleifend,
-													scelerisque eros ut, pellentesque nibh. Nam lacinia suscipit accumsan. </p>
-												<p> Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante
-													sed nisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-													mus. </p>
-												<hr class="no_line" style="margin:0 auto 15px"> <a class="button button_size_2 button_theme"
-													href="services.html"><span class="button_label">OUR SERVICES</span></a>
+												<p> {% blocktranslate %}The company's main clients will be the nomadic communities and nations
+													looking for
+													sustenance of their economy and livelihoods during the prevalent drought period.
+													The company is leveraged through private investment and donor funding. The company target
+													client are the
+													nomadic communities in Kenya, Somalia, Ethiopia, Djibouti, and the rest of Africa, with the
+													government
+													support of the respective nations and international organizations.
+													{% endblocktranslate %}</p>
+												<hr class="no_line" style="margin:0 auto 15px">
+												<!-- <a class="button button_size_2 button_theme"
+													href="services.html"><span class="button_label">OUR SERVICES</span></a> -->
 											</div>
 										</div>
 									</div>
@@ -74,8 +81,8 @@
 						<div class="section mcb-section mcb-section-776c590f1 no-margin-h no-margin-v equal-height-wrap full-width"
 							style="padding-left:5%;padding-right:5%">
 							<div class="section_wrapper mcb-section-inner">
-								<div class="wrap mcb-wrap mcb-wrap-5fbdd75b2 one-second valign-top bg-cover clearfix"
-									style="background-image:url(images/industry2-wrap-bg6.jpg);background-repeat:no-repeat;background-position:left top">
+								<div class="wrap mcb-wrap mcb-wrap-5fbdd75b2 one-second valign-top bg-cover clearfix" style="background-image:url({% static 'images/pics/team/team.jpeg'%});background-repeat:no-repeat;background-position:left
+									top">
 									<div class="mcb-wrap-inner">
 										<div class="column mcb-column mcb-item-cb8f7d391 one column_divider">
 											<hr class="no_line" style="margin:0 auto 400px">
@@ -87,20 +94,32 @@
 									<div class="mcb-wrap-inner">
 										<div class="column mcb-column mcb-item-2a5b6f499 three-fourth column_column">
 											<div class="column_attr clearfix" style>
-												<h2>Vivamus in diam turpis vestibulum lorem</h2>
+												<h2>{% blocktranslate %}The Team{% endblocktranslate %}</h2>
 												<hr class="no_line" style="margin:0 auto 25px">
-												<p> Sed enim metus, tempus elementum dui in, fringilla sollicitudin erat. Suspendisse blandit,
-													nisl ut aliquet varius, sem dolor auctor nisi, vel facilisis sapien elit et magna. Maecenas eu
-													nisl eleifend, iaculis nibh in, interdum nulla. </p>
+												<p> {% blocktranslate %}ADILP is a limited liability proprietorship incorporated in Kenya and
+													Somalia for
+													tax purposes. The corporation has the sole shareholding of Honorable Abdirashid Mohammed Hidig
+													{a
+													Visionary Leader, Revolutionary Politician and member of Somali Federal Parliament, an
+													Agronomist, a MBA
+													holder and, a serial investor}
+													The company plans to be leveraged through private investment and international and national
+													donor funding.
+													The company has, for a period of twenty-two months, done intensive research in both
+													agriculture and
+													drought eradication and successfully launched its first output in Jubaland State (Kismayo) in
+													Somalia,
+													where it was hugely successful.
+													{% endblocktranslate %} </p>
 												<hr class="no_line" style="margin:0 auto 50px"> <a class="button button_size_2 button_theme"
-													href="contact.html"><span class="button_label">JOIN US</span></a>
+													href="{% url 'contact'%}"><span class="button_label">JOIN US</span></a>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="section mcb-section mcb-section-hoiwh5gjy" style="padding-top:110px;padding-bottom:70px">
+						<!-- <div class="section mcb-section mcb-section-hoiwh5gjy" style="padding-top:110px;padding-bottom:70px">
 							<div class="section_wrapper mcb-section-inner">
 								<div class="wrap mcb-wrap mcb-wrap-mlbnl3o3i one-fourth valign-top clearfix" style="padding:0 2%">
 									<div class="mcb-wrap-inner">
@@ -174,11 +193,11 @@
 									<div class="mcb-wrap-inner"></div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 						<div class="section mcb-section mcb-section-fe3484f33" style="padding-top:110px;background-color:#f2f2f2">
 							<div class="section_wrapper mcb-section-inner">
 								<div class="wrap mcb-wrap mcb-wrap-9f598c9b2 one valign-top clearfix" style>
-									<div class="mcb-wrap-inner">
+									<!-- <div class="mcb-wrap-inner">
 										<div class="column mcb-column mcb-item-81649a27e one column_column">
 											<div class="column_attr clearfix align_center" style>
 												<h3>We cooperate with</h3>
@@ -234,7 +253,7 @@
 										<div class="column mcb-column mcb-item-3f6cdde0e one column_divider">
 											<hrstyle="margin:0 auto 90px;background-color:#dbe3e0">
 										</div>
-									</div>
+									</div> -->
 								</div>
 							</div>
 						</div>
@@ -245,14 +264,25 @@
 									<div class="mcb-wrap-inner">
 										<div class="column mcb-column mcb-item-930b75f7d five-sixth column_column">
 											<div class="column_attr clearfix" style>
-												<h2>Sed ultrices nisl velit, eu ornare est ullamcorper conseq est.</h2>
+												<h2>{% blocktranslate %}The Project: ADILP Somalia{% endblocktranslate %}</h2>
 												<hr class="no_line" style="margin:0 auto 20px">
-												<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris dolor, gravida a
-													varius blandit, auctor eget purus. Phasellus scelerisque sapien sit amet mauris laoreet, eget
-													scelerisque nunc cursus. Duis ultricies malesuada leo vel aliquet. </p>
-												<p> Curabitur rutrum porta dui eget mollis. Nullam lacinia dictum auctor. Class aptent taciti
-													sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Orci varius natoque
-													penatibus et magnis dis parturient montes, nascetur ridiculu. </p>
+												<p> {% blocktranslate %}Phase 1 of the project is aims at serving 16 centers within Somalia and
+													Kenya. The
+													expansion
+													structure
+													of ADILP is curated by specialized franchising of large-scale hydroponic fodder production.
+													The company
+													believes that franchising of large-scale fodder production is the absolute game changer to the
+													insistent
+													drought crisis in Africa. With a team of highly qualified network of legal consultants, the
+													company has
+													successfully set up legal structures to ensure that the brand is not only protected, but, that
+													the quality
+													of the fodder production is maintained to the highest possible standards. The company believes
+													that saving
+													livestock lives of such communities will enhance comfort living and preserve
+													livelihood.{% endblocktranslate %}
+												</p>
 											</div>
 										</div>
 									</div>
@@ -261,8 +291,9 @@
 									<div class="mcb-wrap-inner">
 										<div class="column mcb-column mcb-item-y5pjs7kfy one column_image">
 											<div class="image_frame image_item no_link scale-with-grid no_border">
-												<div class="image_wrapper"><img class="scale-with-grid" src="images/industry2-press-pic6.jpg"
-														alt="industry2-press-pic6" title width="780" height="918"> </div>
+												<div class="image_wrapper"><img class="scale-with-grid"
+														src="{% static 'images/pics/team/fodder.jpeg'%}" alt="industry2-press-pic6" title
+														width="780" height="918"> </div>
 											</div>
 										</div>
 									</div>
@@ -275,19 +306,22 @@
 									<div class="mcb-wrap-inner">
 										<div class="column mcb-column mcb-item-205a74ad9 five-sixth column_column">
 											<div class="column_attr clearfix" style>
-												<p> Sed enim metus, tempus elementum dui in, fringilla sollicitudin erat. Suspendisse blandit,
-													nisl ut aliquet varius, sem dolor auctor nisi, vel facilisis sapien elit et magna. </p>
-												<p> Maecenas eu nisl eleifend, iaculis nibh in, interdum nulla. Fusce ut velit laoreet. </p>
-												<p> Proin eu nibh sagittis, auctor nulla id, malesuada nulla. Integer sed tellus eu orci
-													pellentesque ultricies venenatis eget massa. Ut tempor sapien vel dolor venenatis feugiat.
-													Donec egestas purus odio, a varius lorem vulputate at. Lorem ipsum dolor sit amet, consectetur
-													adipiscing elit. </p>
-												<p> Curabiturt empus massa magna, quis vulputate lorem lobortis accumsan. Nulla lorem tortor,
-													luctus a neque eu. </p>
+												<h2 style="color:#105d42;">{% blocktranslate %}ADILP’s values{% endblocktranslate %}</h2>
+												<hr class="no_line" style="margin:0 auto 30px">
+												<p> {% blocktranslate %}The driving values in the undertaking of the project shall
+													entail:{% endblocktranslate %}</p>
+												<ul>
+													<li>{% blocktranslate %}Transparency{% endblocktranslate %}</li>
+													<li>{% blocktranslate %}Quality livestock feed{% endblocktranslate %}</li>
+													<li>{% blocktranslate %}Affordability{% endblocktranslate %}</li>
+													<li>{% blocktranslate %}Environmental consciousness{% endblocktranslate %}</li>
+													<li>{% blocktranslate %}Livelihood preservation{% endblocktranslate %}</li>
+												</ul>
 											</div>
 										</div>
 										<div class="column mcb-column mcb-item-coz7nm8im one column_button"> <a
-												class="button button_size_2 button_theme" href="services.html"><span class="button_label">SEE
+												class="button button_size_2 button_theme" href="{% url 'services' %}"><span
+													class="button_label">SEE
 													OUR OFFER</span></a> </div>
 									</div>
 								</div>
@@ -295,21 +329,24 @@
 									<div class="mcb-wrap-inner">
 										<div class="column mcb-column mcb-item-h108gh1s5 one column_column">
 											<div class="column_attr clearfix" style>
-												<h2 style="color:#105d42;">95% revenue</h2>
+												<h2 style="color:#105d42;">{% blocktranslate %}ADILP’s Vision{% endblocktranslate %}</h2>
 												<hr class="no_line" style="margin:0 auto 30px">
-												<h5>Sed ultrices nisl velit, eu ornare est ullamcorper a. Nunc quis nibh magna. Proin risus
-													erat, fringilla vel.</h5>
+												<h5>{% blocktranslate %}To sustain nomadic communities in Africa by saving livestock
+													lives.{% endblocktranslate %}</h5>
 											</div>
 										</div>
 										<div class="column mcb-column mcb-item-fwryx5jm7 one column_divider">
-											<hrstyle="margin:0 auto 60px;background-color:#dbe3e0">
+											<hr style="margin:0 auto 60px;background-color:#dbe3e0">
 										</div>
 										<div class="column mcb-column mcb-item-npyafp4gu one column_column">
 											<div class="column_attr clearfix" style>
-												<p> Suspendisse blandit, nisl ut aliquet varius, sem dolor auctor nisi, vel facilisis sapien
-													elit et magna. Maecenas eu nisl eleifend, iaculis nibh in, interdum nulla. Duis dignissim mi
-													ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor.
-												</p>
+												<h2 style="color:#105d42;">{% blocktranslate %}ADILP’s Mission{% endblocktranslate %}</h2>
+												<hr class="no_line" style="margin:0 auto 30px">
+												<h5>{% blocktranslate %}The project’s mission is to provide a sustainable environment for
+													nomadic
+													pastoralists by preserving livestock lives thereby eliminating the rise of internally
+													displaced persons
+													(IDPs){% endblocktranslate %}</h5>
 											</div>
 										</div>
 									</div>

@@ -8,6 +8,8 @@ admin.site.register(MailMessage)
 admin.site.register(News_video)
 admin.site.register(Event)
 admin.site.register(Picture)
+admin.site.register(Gallery)
+admin.site.register(Service)
 # Register your models here.
 
 class SubscriberResource(resources.ModelResource):

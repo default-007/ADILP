@@ -1,32 +1,46 @@
-{% load static %}
+{% load static i18n%}
 <div id="Top_bar">
   <div class="container">
     <div class="column one">
       <div class="top_bar_left clearfix">
         <div class="logo">
-          <a id="logo" href="index-industry2.html" title="BeIndustry 2 - Betheme" data-height="60"
-            data-padding="40"><img class="logo-main scale-with-grid" src="{% static 'images/industry2.png'%}"
-              data-retina="{% static 'images/retina-industry2.png'%}" data-height="88" alt="industry2"
-              data-no-retina><img class="logo-sticky scale-with-grid" src="{% static 'images/industry2.png'%}"
-              data-retina="{% static 'images/retina-industry2.png'%}" data-height="88" alt="industry2"
-              data-no-retina><img class="logo-mobile scale-with-grid" src="{% static 'images/industry2.png' %}"
-              data-retina="{% static 'images/retina-industry2.png'%}" data-height="88" alt="industry2"
-              data-no-retina><img class="logo-mobile-sticky scale-with-grid" src="{% static 'images/industry2.png' %}"
-              data-retina="{% static 'images/retina-industry2.png'%}" data-height="88" alt="industry2"
-              data-no-retina></a>
+          <a id="logo" href="/" title="ADILP" data-height="60" data-padding="40"><img class="logo-main scale-with-grid"
+              src="{% static 'images/pics/logo_2.png'%}" data-retina="{% static 'images/retina-industry2.png'%}"
+              data-height="88" alt="industry2" data-no-retina><img class="logo-sticky scale-with-grid"
+              src="{% static 'images/pics/logo_2.png'%}" data-retina="{% static 'images/retina-industry2.png'%}"
+              data-height="88" alt="industry2" data-no-retina><img class="logo-mobile scale-with-grid"
+              src="{% static 'images/pics/logo_2.png' %}" data-retina="{% static 'images/retina-industry2.png'%}"
+              data-height="88" alt="industry2" data-no-retina><img class="logo-mobile-sticky scale-with-grid"
+              src="{% static 'images/pics/logo_2.png' %}" data-retina="{% static 'images/retina-industry2.png'%}"
+              data-height="88" alt="industry2" data-no-retina></a>
         </div>
         <div class="menu_wrapper">
           <nav id="menu">
             <ul id="menu-main-menu-left" class="menu menu-main menu_left">
-              <li class=" current-menu-item page_item current_page_item"> <a
-                  href="index-industry2.html"><span>HOME</span></a> </li>
-              <li> <a href=""><span>ABOUT US</span></a> </li>
-              <li> <a href=""><span>SERVICES</span></a> </li>
+              <li class=" current-menu-item page_item current_page_item"> <a href="/"><span>HOME</span></a> </li>
+              <li> <a href="{% url 'about' %}"><span>ABOUT US</span></a> </li>
+              <li> <a href="{% url 'services' %}"><span>SERVICES</span></a> </li>
+              <li><a href="{% url 'events' %}"><span>EVENT</span></a></li>
             </ul>
             <ul id="menu-main-menu-right" class="menu menu-main menu_right">
-              <li> <a href=""><span>NEWS</span></a> </li>
-              <li> <a href=""><span>CONTACT</span></a> </li>
+              <li> <a href="{% url 'news' %}"><span>NEWS</span></a> </li>
+              <li><a href="{% url 'gallery' %}"> <span>GALLERY</span> </a></li>
+              <li> <a href="{% url 'contact' %}"><span>CONTACT</span></a> </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  LANG
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  {% get_current_language as LANGUAGE_CODE %}
+                  {% get_available_languages as LANGUAGES%}
+                  {% get_language_info_list for LANGUAGES as languages %}
+                  {% for lang in languages %}
 
+                  <li><a class="dropdown-item" href="/{{ lang.code }}/">{{ lang.name_local }}</a></li>
+                  {% endfor %}
+                </ul>
+              </li>
             </ul>
           </nav><a class="responsive-menu-toggle " href="#"><i class="icon-menu-fine"></i></a>
         </div>

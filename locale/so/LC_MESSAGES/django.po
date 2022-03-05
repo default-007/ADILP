@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-03 16:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ADILP/settings.py:131
+msgid "English"
+msgstr ""
+
+#: ADILP/settings.py:132
+msgid "Somali"
+msgstr ""
+
+#: app/templates/events.html:16
+msgid "Event"
+msgstr ""
+
+#: app/templates/events.html:35
+#, python-format
+msgid " %(headline)s "
+msgstr ""
+
+#: app/templates/events.html:38
+#, python-format
+msgid ""
+" %(description)s\n"
+"                          "
+msgstr ""
+
+#: app/templates/index.html:111
+msgid "Expansion plans for 2021"
+msgstr ""
+
+#: app/templates/index.html:113
+msgid ""
+"Pellentesque a semper massa. Fusce aliquet dolor non nunc mollis\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tsollicitudin."
+msgstr ""
+
+#: app/templates/index.html:116
+msgid "READ MORE"
+msgstr ""
+
+#: app/templates/index.html:131
+msgid "We have the largest extraction of oil"
+msgstr ""
+
+#: app/templates/index.html:133
+msgid ""
+"Sed enim metus, tempus elementum dui in, fringilla sollicitudin erat.\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tSuspendisse\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tblandit,\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tnisl ut aliquet varius, sem dolor auctor nisi, vel "
+"facilisis sapien "
+msgstr ""
+
+#: app/templates/index.html:164
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tdolor, gravida\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\ta\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tvarius blandit, auctor eget purus."
+msgstr ""
+
+#: app/templates/index.html:175
+msgid ""
+"Proin eu nibh sagittis, auctor nulla id, malesuada nulla. Integer sed\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\ttellus eu orci\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tpellentesque ultricies venenatis eget massa. Ut "
+"tempor sapien vel dolor venenatis feugiat.\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tDonec egestas purus odio, a varius lorem vulputate "
+"at. Lorem ipsum dolor sit amet, consectetur\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tadipiscing elit."
+msgstr ""
+
+#: app/templates/index.html:179
+msgid "Lets Translate this"
+msgstr "Sijui ata"
+
+#: app/views.py:77
+msgid "Thank you for registering to our site"
+msgstr ""
+
+#: app/views.py:98
+msgid "hello"
+msgstr ""
