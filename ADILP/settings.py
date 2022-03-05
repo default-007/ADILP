@@ -37,7 +37,7 @@ MESSAGE_TAGS = {
     messages.ERROR: 'alert-danger',
 }
 # Application definition
-CSRF_TRUSTED_ORIGINS=['https://adilp-test.herokuapp.com', 'https://*.127.0.0.1']
+CSRF_TRUSTED_ORIGINS=['https://*.herokuapp.com', 'https://*.127.0.0.1']
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -130,7 +130,7 @@ LANGUAGE_CODE = 'en'
 
 LANGUAGES = (
     ('en', _('English')),
-    ('so', gettext_noop('Somali')),
+    ('so', _('Somali')),
 )
 EXTRA_LANG_INFO = {
     'so': {
