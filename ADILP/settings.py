@@ -37,7 +37,7 @@ MESSAGE_TAGS = {
     messages.ERROR: 'alert-danger',
 }
 # Application definition
-
+CSRF_TRUSTED_ORIGINS=['*']
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
