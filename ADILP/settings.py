@@ -37,7 +37,7 @@ MESSAGE_TAGS = {
     messages.ERROR: 'alert-danger',
 }
 # Application definition
-CSRF_TRUSTED_ORIGINS=['*']
+CSRF_TRUSTED_ORIGINS=['https://adilp-test.herokuapp.com', 'https://*.127.0.0.1']
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
